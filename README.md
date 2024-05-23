@@ -2050,3 +2050,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 ---
 
 [🔝 Back to Top](#docuthinker---ai-powered-document-analysis-and-summarization-app)
+
+- Handle edge case when the response body is empty but status is 200
