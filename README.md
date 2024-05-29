@@ -2054,3 +2054,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Handle edge case when the response body is empty but status is 200
 
 - Improve test coverage for the helpers module to above 90%
+
+- Support config reload without restart via SIGHUP or file watch
