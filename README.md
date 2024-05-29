@@ -2056,3 +2056,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Improve test coverage for the helpers module to above 90%
 
 - Support config reload without restart via SIGHUP or file watch
+
+- Implement retry logic for the API client when the remote returns 5xx
