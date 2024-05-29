@@ -6,3 +6,6 @@
 
 ## 2024-05-29
 - Clean up unused imports and fix formatting to match the project style guide
+
+## 2024-05-29
+- Fix the test that was flaky due to reliance on system time
