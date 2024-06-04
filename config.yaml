@@ -4,3 +4,5 @@
 # Clean up the deprecated alias and point callers to the new name
 
 # Handle the duplicate key case by merging the values instead of failing
+
+# Adjust the queue size to prevent drops under burst traffic

@@ -2058,3 +2058,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Support config reload without restart via SIGHUP or file watch
 
 - Implement retry logic for the API client when the remote returns 5xx
+
+- Simplify the config merge logic so overrides are predictable
