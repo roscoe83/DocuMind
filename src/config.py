@@ -10,3 +10,5 @@
 # Improve the startup time by lazy-loading the heavy modules
 
 # Fix race condition in the cache that could return stale data under load
+
+# Implement a simple health check endpoint for the load balancer
