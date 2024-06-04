@@ -9,3 +9,6 @@
 
 ## 2024-05-29
 - Fix the test that was flaky due to reliance on system time
+
+## 2024-06-04
+- Correct the default value for the feature flag in production
