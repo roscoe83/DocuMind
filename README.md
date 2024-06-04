@@ -2060,3 +2060,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Implement retry logic for the API client when the remote returns 5xx
 
 - Simplify the config merge logic so overrides are predictable
+
+- Update the changelog with the fixes included in this release
