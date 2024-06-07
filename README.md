@@ -2062,3 +2062,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Simplify the config merge logic so overrides are predictable
 
 - Update the changelog with the fixes included in this release
+
+- Add proper error handling for invalid config so the app doesn't crash on startup
