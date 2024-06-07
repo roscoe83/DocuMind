@@ -2064,3 +2064,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Update the changelog with the fixes included in this release
 
 - Add proper error handling for invalid config so the app doesn't crash on startup
+
+- Correct the default value for the feature flag in production
