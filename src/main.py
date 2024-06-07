@@ -8,3 +8,5 @@
 # Refactor exports so the public API is clearer and easier to use
 
 # Refactor utils to use a single source of truth for default values
+
+# Bump minimum Python version to 3.10 and update type hints accordingly

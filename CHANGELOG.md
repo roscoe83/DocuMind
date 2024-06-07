@@ -12,3 +12,6 @@
 
 ## 2024-06-04
 - Correct the default value for the feature flag in production
+
+## 2024-06-07
+- Improve logging so we can trace requests through the pipeline in production
