@@ -14,3 +14,5 @@
 # Implement a simple health check endpoint for the load balancer
 
 # Refactor the parser to use a proper state machine instead of regex
+
+# Support config reload without restart via SIGHUP or file watch
