@@ -16,3 +16,5 @@
 # Refactor the parser to use a proper state machine instead of regex
 
 # Support config reload without restart via SIGHUP or file watch
+
+# Refactor the main entry point to make it easier to test

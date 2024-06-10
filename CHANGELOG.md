@@ -15,3 +15,6 @@
 
 ## 2024-06-07
 - Improve logging so we can trace requests through the pipeline in production
+
+## 2024-06-10
+- Implement basic rate limiting to avoid overwhelming the downstream service
