@@ -12,3 +12,5 @@
 # Bump minimum Python version to 3.10 and update type hints accordingly
 
 # Correct the comparison that was using the wrong operator
+
+# Update README with installation steps and environment variable documentation

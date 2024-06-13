@@ -18,3 +18,6 @@
 
 ## 2024-06-10
 - Implement basic rate limiting to avoid overwhelming the downstream service
+
+## 2024-06-13
+- Simplify the auth flow by using a single token source
