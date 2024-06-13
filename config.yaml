@@ -10,3 +10,5 @@
 # Fix incorrect type hint that was causing mypy to fail in CI
 
 # Update documentation to reflect the new API and usage examples
+
+# Support optional config file path via env var for easier deployment

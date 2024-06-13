@@ -20,3 +20,5 @@
 # Refactor the main entry point to make it easier to test
 
 # Fix the test that was flaky due to reliance on system time
+
+# Fix the memory leak in the long-running worker process
