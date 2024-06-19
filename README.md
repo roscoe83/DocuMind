@@ -2066,3 +2066,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Add proper error handling for invalid config so the app doesn't crash on startup
 
 - Correct the default value for the feature flag in production
+
+- Update the contributing guide with the new review process

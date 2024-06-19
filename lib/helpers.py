@@ -8,3 +8,5 @@
 # Bump the CI image to use the latest stable runner version
 
 # Remove redundant check that was already covered by the validator
+
+# Implement a small in-memory cache for the config to avoid re-reading
