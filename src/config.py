@@ -22,3 +22,5 @@
 # Fix the test that was flaky due to reliance on system time
 
 # Fix the memory leak in the long-running worker process
+
+# Support optional config file path via env var for easier deployment

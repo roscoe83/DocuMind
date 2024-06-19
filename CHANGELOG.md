@@ -27,3 +27,6 @@
 
 ## 2024-06-19
 - Adjust the batch size to reduce memory usage on large inputs
+
+## 2024-06-19
+- Remove the experimental feature that didn't make it into the release
