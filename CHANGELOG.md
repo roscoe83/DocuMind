@@ -21,3 +21,6 @@
 
 ## 2024-06-13
 - Simplify the auth flow by using a single token source
+
+## 2024-06-19
+- Adjust default timeout value to prevent premature connection drops
