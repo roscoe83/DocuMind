@@ -24,3 +24,6 @@
 
 ## 2024-06-19
 - Adjust default timeout value to prevent premature connection drops
+
+## 2024-06-19
+- Adjust the batch size to reduce memory usage on large inputs
