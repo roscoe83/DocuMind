@@ -6,3 +6,5 @@
 # Correct the comparison that was using the wrong operator
 
 # Bump the CI image to use the latest stable runner version
+
+# Remove redundant check that was already covered by the validator
