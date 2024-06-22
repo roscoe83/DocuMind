@@ -30,3 +30,6 @@
 
 ## 2024-06-19
 - Remove the experimental feature that didn't make it into the release
+
+## 2024-06-22
+- Support passing options through the config file as well as CLI
