@@ -10,3 +10,5 @@
 # Remove redundant check that was already covered by the validator
 
 # Implement a small in-memory cache for the config to avoid re-reading
+
+# Improve logging so we can trace requests through the pipeline in production
