@@ -14,3 +14,5 @@
 # Support optional config file path via env var for easier deployment
 
 # Clean up debug print statements before the release
+
+# Fix the encoding issue when reading config files with non-ASCII

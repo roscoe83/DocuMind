@@ -33,3 +33,6 @@
 
 ## 2024-06-22
 - Support passing options through the config file as well as CLI
+
+## 2024-06-28
+- Adjust default timeout value to prevent premature connection drops
