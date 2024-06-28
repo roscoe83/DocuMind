@@ -16,3 +16,5 @@
 # Clean up debug print statements before the release
 
 # Fix the encoding issue when reading config files with non-ASCII
+
+# Implement proper cleanup of resources when the process receives SIGTERM
