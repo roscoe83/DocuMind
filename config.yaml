@@ -18,3 +18,5 @@
 # Fix the encoding issue when reading config files with non-ASCII
 
 # Implement proper cleanup of resources when the process receives SIGTERM
+
+# Update the license file and add the new third-party notices

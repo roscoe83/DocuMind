@@ -14,3 +14,5 @@
 # Improve logging so we can trace requests through the pipeline in production
 
 # Fix the memory leak in the long-running worker process
+
+# Refactor the client to use async context manager for the session
