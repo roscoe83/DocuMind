@@ -20,3 +20,5 @@
 # Implement proper cleanup of resources when the process receives SIGTERM
 
 # Update the license file and add the new third-party notices
+
+# Adjust the pool size to match the actual concurrency we need
