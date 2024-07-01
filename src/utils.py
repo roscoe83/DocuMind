@@ -8,3 +8,5 @@
 # Implement basic rate limiting to avoid overwhelming the downstream service
 
 # Bump the library version and pin the dependency in requirements
+
+# Remove the unused parameter that was left from an old refactor

@@ -16,3 +16,5 @@
 # Update README with installation steps and environment variable documentation
 
 # Remove the experimental feature that didn't make it into the release
+
+# Add a comment explaining why we disable the linter on this line
