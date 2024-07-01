@@ -24,3 +24,5 @@
 # Fix the memory leak in the long-running worker process
 
 # Support optional config file path via env var for easier deployment
+
+# Support passing options through the config file as well as CLI
