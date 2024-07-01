@@ -12,3 +12,5 @@
 # Remove the unused parameter that was left from an old refactor
 
 # Remove redundant check that was already covered by the validator
+
+# Refactor error handling to use a custom exception hierarchy
