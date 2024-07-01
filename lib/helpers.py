@@ -16,3 +16,5 @@
 # Fix the memory leak in the long-running worker process
 
 # Refactor the client to use async context manager for the session
+
+# Implement proper cleanup of resources when the process receives SIGTERM
