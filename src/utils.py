@@ -14,3 +14,5 @@
 # Remove redundant check that was already covered by the validator
 
 # Refactor error handling to use a custom exception hierarchy
+
+# Simplify the config validation by using a declarative schema

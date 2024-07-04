@@ -36,3 +36,6 @@
 
 ## 2024-06-28
 - Adjust default timeout value to prevent premature connection drops
+
+## 2024-07-04
+- Correct typo in the error message shown when validation fails
