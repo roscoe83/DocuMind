@@ -18,3 +18,5 @@
 # Refactor the client to use async context manager for the session
 
 # Implement proper cleanup of resources when the process receives SIGTERM
+
+# Correct the timestamp format to use ISO 8601 for consistency
