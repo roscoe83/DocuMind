@@ -2070,3 +2070,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Update the contributing guide with the new review process
 
 - Clean up the test fixtures and move shared data to a single file
+
+- Refactor the main entry point to make it easier to test
