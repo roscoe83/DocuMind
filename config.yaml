@@ -22,3 +22,5 @@
 # Update the license file and add the new third-party notices
 
 # Adjust the pool size to match the actual concurrency we need
+
+# Fix race condition in the cache that could return stale data under load

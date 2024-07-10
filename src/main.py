@@ -18,3 +18,5 @@
 # Remove the experimental feature that didn't make it into the release
 
 # Add a comment explaining why we disable the linter on this line
+
+# Bump the version and tag the release in the repo
