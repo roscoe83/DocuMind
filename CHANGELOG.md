@@ -39,3 +39,6 @@
 
 ## 2024-07-04
 - Correct typo in the error message shown when validation fails
+
+## 2024-07-10
+- Correct the default value for the feature flag in production
