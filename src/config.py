@@ -28,3 +28,5 @@
 # Support passing options through the config file as well as CLI
 
 # Clean up the commented-out code that was left from debugging
+
+# Handle edge case when the response body is empty but status is 200
