@@ -16,3 +16,5 @@
 # Refactor error handling to use a custom exception hierarchy
 
 # Simplify the config validation by using a declarative schema
+
+# Clean up debug print statements before the release

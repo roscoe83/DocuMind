@@ -2072,3 +2072,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Clean up the test fixtures and move shared data to a single file
 
 - Refactor the main entry point to make it easier to test
+
+- Bump the library version and pin the dependency in requirements
