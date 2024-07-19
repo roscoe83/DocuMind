@@ -22,3 +22,5 @@
 # Correct the timestamp format to use ISO 8601 for consistency
 
 # Improve performance by caching the result of the expensive lookup
+
+# Refactor error handling to use a custom exception hierarchy

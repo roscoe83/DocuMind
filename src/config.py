@@ -32,3 +32,5 @@
 # Handle edge case when the response body is empty but status is 200
 
 # Correct the timestamp format to use ISO 8601 for consistency
+
+# Fix the encoding issue when reading config files with non-ASCII
