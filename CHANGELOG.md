@@ -42,3 +42,6 @@
 
 ## 2024-07-10
 - Correct the default value for the feature flag in production
+
+## 2024-07-19
+- Improve the CLI help text so it's clear how to use each option
