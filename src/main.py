@@ -20,3 +20,5 @@
 # Add a comment explaining why we disable the linter on this line
 
 # Bump the version and tag the release in the repo
+
+# Correct typo in the error message shown when validation fails
