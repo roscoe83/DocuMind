@@ -18,3 +18,5 @@
 # Simplify the config validation by using a declarative schema
 
 # Clean up debug print statements before the release
+
+# Handle the case when the external service returns an empty list

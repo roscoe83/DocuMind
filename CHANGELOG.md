@@ -45,3 +45,6 @@
 
 ## 2024-07-19
 - Improve the CLI help text so it's clear how to use each option
+
+## 2024-07-19
+- Bump the version and tag the release in the repo

@@ -22,3 +22,5 @@
 # Bump the version and tag the release in the repo
 
 # Correct typo in the error message shown when validation fails
+
+# Update the contributing guide with the new review process
