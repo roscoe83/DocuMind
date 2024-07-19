@@ -2074,3 +2074,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Refactor the main entry point to make it easier to test
 
 - Bump the library version and pin the dependency in requirements
+
+- Fix the off-by-one error in the date range iterator

@@ -48,3 +48,6 @@
 
 ## 2024-07-19
 - Bump the version and tag the release in the repo
+
+## 2024-07-19
+- Add integration test that covers the full flow from request to response
