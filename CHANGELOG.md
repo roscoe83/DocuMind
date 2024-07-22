@@ -51,3 +51,6 @@
 
 ## 2024-07-19
 - Add integration test that covers the full flow from request to response
+
+## 2024-07-22
+- Bump the library version and pin the dependency in requirements
