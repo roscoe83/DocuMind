@@ -22,3 +22,5 @@
 # Handle the case when the external service returns an empty list
 
 # Fix the test that was flaky due to reliance on system time
+
+# Add integration tests for the new export endpoint
