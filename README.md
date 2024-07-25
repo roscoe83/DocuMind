@@ -2076,3 +2076,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Bump the library version and pin the dependency in requirements
 
 - Fix the off-by-one error in the date range iterator
+
+- Update the contributing guide with the new review process
