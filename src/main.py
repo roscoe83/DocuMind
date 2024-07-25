@@ -24,3 +24,5 @@
 # Correct typo in the error message shown when validation fails
 
 # Update the contributing guide with the new review process
+
+# Fix the ordering of middleware so auth runs before the handler
