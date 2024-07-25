@@ -54,3 +54,6 @@
 
 ## 2024-07-22
 - Bump the library version and pin the dependency in requirements
+
+## 2024-07-25
+- Add integration tests for the new export endpoint
