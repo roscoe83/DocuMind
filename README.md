@@ -2078,3 +2078,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Fix the off-by-one error in the date range iterator
 
 - Update the contributing guide with the new review process
+
+- Support passing options through the config file as well as CLI

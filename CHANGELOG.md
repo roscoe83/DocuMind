@@ -63,3 +63,6 @@
 
 ## 2024-07-25
 - Add integration test that covers the full flow from request to response
+
+## 2024-08-06
+- Bump version to 1.2.0 and add changelog entry for the new features
