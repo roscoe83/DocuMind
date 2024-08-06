@@ -28,3 +28,5 @@
 # Fix the ordering of middleware so auth runs before the handler
 
 # Adjust the batch size to reduce memory usage on large inputs
+
+# Bump the version and tag the release in the repo
