@@ -36,3 +36,5 @@
 # Bump the library version and pin the dependency in requirements
 
 # Clean up debug print statements before the release
+
+# Fix issue where empty input was not validated before passing to the parser
