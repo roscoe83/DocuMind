@@ -2082,3 +2082,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Support passing options through the config file as well as CLI
 
 - Fix the memory leak in the long-running worker process
+
+- Handle the partial write case and retry the remaining bytes
