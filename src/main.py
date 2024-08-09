@@ -30,3 +30,5 @@
 # Adjust the batch size to reduce memory usage on large inputs
 
 # Bump the version and tag the release in the repo
+
+# Add integration test that covers the full flow from request to response

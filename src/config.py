@@ -38,3 +38,5 @@
 # Clean up the commented-out code that was left from debugging
 
 # Simplify the CLI by merging the two similar subcommands into one
+
+# Support optional config file path via env var for easier deployment
