@@ -66,3 +66,6 @@
 
 ## 2024-08-06
 - Bump version to 1.2.0 and add changelog entry for the new features
+
+## 2024-08-09
+- Improve performance by caching the result of the expensive lookup

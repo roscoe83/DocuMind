@@ -42,3 +42,5 @@
 # Bump the library version and pin the dependency in requirements
 
 # Implement request ID propagation for better tracing across services
+
+# Remove the deprecated wrapper and use the library API directly

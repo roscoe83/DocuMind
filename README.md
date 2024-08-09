@@ -2080,3 +2080,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Update the contributing guide with the new review process
 
 - Support passing options through the config file as well as CLI
+
+- Fix the memory leak in the long-running worker process
