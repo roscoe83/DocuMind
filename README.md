@@ -2084,3 +2084,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Fix the memory leak in the long-running worker process
 
 - Handle the partial write case and retry the remaining bytes
+
+- Add integration tests for the new export endpoint
