@@ -2088,3 +2088,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Add integration tests for the new export endpoint
 
 - Fix race condition in the cache that could return stale data under load
+
+- Bump minimum Python version to 3.10 and update type hints accordingly
