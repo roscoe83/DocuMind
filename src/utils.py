@@ -24,3 +24,5 @@
 # Fix the test that was flaky due to reliance on system time
 
 # Add integration tests for the new export endpoint
+
+# Remove hardcoded credentials and move to env-based configuration
