@@ -2086,3 +2086,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Handle the partial write case and retry the remaining bytes
 
 - Add integration tests for the new export endpoint
+
+- Fix race condition in the cache that could return stale data under load
