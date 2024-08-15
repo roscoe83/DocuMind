@@ -34,3 +34,5 @@
 # Add integration test that covers the full flow from request to response
 
 # Implement proper backoff with jitter for the retry logic
+
+# Remove the experimental feature that didn't make it into the release
