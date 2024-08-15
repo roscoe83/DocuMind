@@ -30,3 +30,5 @@
 # Adjust buffer size for the stream reader to reduce memory usage
 
 # Update the contributing guide with the new review process
+
+# Update the API docs with the new query parameters and examples

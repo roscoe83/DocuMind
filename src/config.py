@@ -40,3 +40,5 @@
 # Simplify the CLI by merging the two similar subcommands into one
 
 # Support optional config file path via env var for easier deployment
+
+# Update README with installation steps and environment variable documentation
