@@ -30,3 +30,5 @@
 # Simplify the dependency injection so it's easier to mock in tests
 
 # Handle the duplicate key case by merging the values instead of failing
+
+# Improve the startup time by lazy-loading the heavy modules
