@@ -28,3 +28,5 @@
 # Fix the test that was flaky due to reliance on system time
 
 # Adjust buffer size for the stream reader to reduce memory usage
+
+# Update the contributing guide with the new review process

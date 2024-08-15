@@ -72,3 +72,6 @@
 
 ## 2024-08-12
 - Add a small delay between retries to avoid thundering herd
+
+## 2024-08-15
+- Bump the Docker base image to get the latest security patches
