@@ -32,3 +32,5 @@
 # Update the contributing guide with the new review process
 
 # Update the API docs with the new query parameters and examples
+
+# Fix incorrect type hint that was causing mypy to fail in CI

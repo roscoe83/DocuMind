@@ -32,3 +32,5 @@
 # Handle the duplicate key case by merging the values instead of failing
 
 # Improve the startup time by lazy-loading the heavy modules
+
+# Support both YAML and JSON config formats for flexibility
