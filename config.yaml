@@ -44,3 +44,5 @@
 # Implement request ID propagation for better tracing across services
 
 # Remove the deprecated wrapper and use the library API directly
+
+# Update the changelog with the fixes included in this release

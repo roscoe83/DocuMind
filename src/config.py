@@ -44,3 +44,5 @@
 # Update README with installation steps and environment variable documentation
 
 # Simplify the CLI by merging the two similar subcommands into one
+
+# Support config reload without restart via SIGHUP or file watch
