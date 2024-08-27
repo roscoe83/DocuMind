@@ -48,3 +48,5 @@
 # Update the changelog with the fixes included in this release
 
 # Adjust log level for noisy messages that were filling the logs
+
+# Refactor the parser to use a proper state machine instead of regex

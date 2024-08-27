@@ -2092,3 +2092,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Bump minimum Python version to 3.10 and update type hints accordingly
 
 - Remove redundant check that was already covered by the validator
+
+- Refactor config loading into a separate module for better testability
