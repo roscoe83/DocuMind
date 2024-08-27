@@ -2090,3 +2090,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Fix race condition in the cache that could return stale data under load
 
 - Bump minimum Python version to 3.10 and update type hints accordingly
+
+- Remove redundant check that was already covered by the validator
