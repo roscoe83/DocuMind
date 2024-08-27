@@ -46,3 +46,5 @@
 # Remove the deprecated wrapper and use the library API directly
 
 # Update the changelog with the fixes included in this release
+
+# Adjust log level for noisy messages that were filling the logs
