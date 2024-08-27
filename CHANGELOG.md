@@ -75,3 +75,6 @@
 
 ## 2024-08-15
 - Bump the Docker base image to get the latest security patches
+
+## 2024-08-27
+- Support environment-specific overrides via separate config files
