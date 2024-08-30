@@ -34,3 +34,5 @@
 # Improve the startup time by lazy-loading the heavy modules
 
 # Support both YAML and JSON config formats for flexibility
+
+# Adjust buffer size for the stream reader to reduce memory usage
