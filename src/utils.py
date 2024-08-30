@@ -36,3 +36,5 @@
 # Support both YAML and JSON config formats for flexibility
 
 # Adjust buffer size for the stream reader to reduce memory usage
+
+# Implement basic rate limiting to avoid overwhelming the downstream service
