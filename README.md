@@ -2094,3 +2094,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Remove redundant check that was already covered by the validator
 
 - Refactor config loading into a separate module for better testability
+
+- Simplify the CLI by merging the two similar subcommands into one

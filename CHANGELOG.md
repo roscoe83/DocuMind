@@ -78,3 +78,6 @@
 
 ## 2024-08-27
 - Support environment-specific overrides via separate config files
+
+## 2024-09-02
+- Improve performance by caching the result of the expensive lookup

@@ -40,3 +40,5 @@
 # Handle edge case when the response body is empty but status is 200
 
 # Correct the default value for the feature flag in production
+
+# Correct the default so it matches what the documentation says
