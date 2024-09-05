@@ -50,3 +50,5 @@
 # Support config reload without restart via SIGHUP or file watch
 
 # Fix race condition in the cache that could return stale data under load
+
+# Bump the dependency to fix the compatibility issue with Python 3.12

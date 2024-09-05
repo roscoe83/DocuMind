@@ -38,3 +38,5 @@
 # Add a note in the README about the breaking change in 2.0
 
 # Update the example config with all available options and comments
+
+# Fix the off-by-one error in the date range iterator
