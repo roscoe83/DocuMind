@@ -52,3 +52,5 @@
 # Fix race condition in the cache that could return stale data under load
 
 # Bump the dependency to fix the compatibility issue with Python 3.12
+
+# Correct the logic that determined whether to use cache or not

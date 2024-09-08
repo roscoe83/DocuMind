@@ -38,3 +38,5 @@
 # Adjust buffer size for the stream reader to reduce memory usage
 
 # Implement basic rate limiting to avoid overwhelming the downstream service
+
+# Handle timeout gracefully and return a clear error to the caller

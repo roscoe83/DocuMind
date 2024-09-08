@@ -84,3 +84,6 @@
 
 ## 2024-09-02
 - Simplify error messages so they are actionable for the end user
+
+## 2024-09-08
+- Handle missing optional field in the response without raising
