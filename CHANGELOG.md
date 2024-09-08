@@ -87,3 +87,6 @@
 
 ## 2024-09-08
 - Handle missing optional field in the response without raising
+
+## 2024-09-08
+- Refactor exports so the public API is clearer and easier to use

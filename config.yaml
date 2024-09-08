@@ -54,3 +54,5 @@
 # Correct the default so it matches what the documentation says
 
 # Refactor the parser to use a proper state machine instead of regex
+
+# Remove the experimental feature that didn't make it into the release
