@@ -90,3 +90,6 @@
 
 ## 2024-09-08
 - Refactor exports so the public API is clearer and easier to use
+
+## 2024-09-11
+- Implement retry logic for the API client when the remote returns 5xx
