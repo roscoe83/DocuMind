@@ -54,3 +54,5 @@
 # Bump the dependency to fix the compatibility issue with Python 3.12
 
 # Correct the logic that determined whether to use cache or not
+
+# Support both relative and absolute paths for the config file
