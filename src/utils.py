@@ -40,3 +40,5 @@
 # Implement basic rate limiting to avoid overwhelming the downstream service
 
 # Handle timeout gracefully and return a clear error to the caller
+
+# Refactor exports so the public API is clearer and easier to use

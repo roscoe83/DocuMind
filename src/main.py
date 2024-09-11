@@ -42,3 +42,5 @@
 # Correct the default value for the feature flag in production
 
 # Correct the default so it matches what the documentation says
+
+# Remove hardcoded credentials and move to env-based configuration

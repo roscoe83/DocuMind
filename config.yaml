@@ -56,3 +56,5 @@
 # Refactor the parser to use a proper state machine instead of regex
 
 # Remove the experimental feature that didn't make it into the release
+
+# Implement request ID propagation for better tracing across services
