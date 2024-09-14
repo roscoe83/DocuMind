@@ -58,3 +58,5 @@
 # Remove the experimental feature that didn't make it into the release
 
 # Implement request ID propagation for better tracing across services
+
+# Add integration tests for the new export endpoint

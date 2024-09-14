@@ -44,3 +44,5 @@
 # Correct the default so it matches what the documentation says
 
 # Remove hardcoded credentials and move to env-based configuration
+
+# Handle connection reset by the peer without crashing the worker
