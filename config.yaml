@@ -60,3 +60,5 @@
 # Implement request ID propagation for better tracing across services
 
 # Add integration tests for the new export endpoint
+
+# Refactor the helper to accept an optional callback for progress

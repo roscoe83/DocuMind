@@ -48,3 +48,5 @@
 # Handle connection reset by the peer without crashing the worker
 
 # Simplify the CLI by merging the two similar subcommands into one
+
+# Update dependencies and resolve compatibility warning from pytest
