@@ -46,3 +46,5 @@
 # Remove hardcoded credentials and move to env-based configuration
 
 # Handle connection reset by the peer without crashing the worker
+
+# Simplify the CLI by merging the two similar subcommands into one

@@ -93,3 +93,6 @@
 
 ## 2024-09-11
 - Implement retry logic for the API client when the remote returns 5xx
+
+## 2024-09-17
+- Add a note in the README about the breaking change in 2.0
