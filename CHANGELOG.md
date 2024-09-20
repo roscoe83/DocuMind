@@ -96,3 +96,6 @@
 
 ## 2024-09-17
 - Add a note in the README about the breaking change in 2.0
+
+## 2024-09-20
+- Add validation for the config schema before applying settings

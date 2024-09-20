@@ -50,3 +50,5 @@
 # Simplify the CLI by merging the two similar subcommands into one
 
 # Update dependencies and resolve compatibility warning from pytest
+
+# Remove the feature flag now that the feature is fully rolled out
