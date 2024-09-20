@@ -2096,3 +2096,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Refactor config loading into a separate module for better testability
 
 - Simplify the CLI by merging the two similar subcommands into one
+
+- Bump the dependency to fix the compatibility issue with Python 3.12
