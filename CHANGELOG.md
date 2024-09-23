@@ -99,3 +99,6 @@
 
 ## 2024-09-20
 - Add validation for the config schema before applying settings
+
+## 2024-09-23
+- Implement a small in-memory cache for the config to avoid re-reading

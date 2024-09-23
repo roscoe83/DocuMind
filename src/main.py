@@ -52,3 +52,5 @@
 # Update dependencies and resolve compatibility warning from pytest
 
 # Remove the feature flag now that the feature is fully rolled out
+
+# Support passing options through the config file as well as CLI
