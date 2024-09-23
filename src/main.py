@@ -54,3 +54,5 @@
 # Remove the feature flag now that the feature is fully rolled out
 
 # Support passing options through the config file as well as CLI
+
+# Improve the default config so it works out of the box for dev

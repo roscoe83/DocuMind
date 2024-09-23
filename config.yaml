@@ -70,3 +70,5 @@
 # Add validation for the config schema before applying settings
 
 # Correct the formula used for calculating the backoff delay
+
+# Correct the formula used for calculating the backoff delay

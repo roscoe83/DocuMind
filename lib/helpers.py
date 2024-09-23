@@ -46,3 +46,5 @@
 # Adjust default timeout value to prevent premature connection drops
 
 # Support passing secrets via a separate file for security
+
+# Implement a simple metrics endpoint for Prometheus scraping
