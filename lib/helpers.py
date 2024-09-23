@@ -48,3 +48,5 @@
 # Support passing secrets via a separate file for security
 
 # Implement a simple metrics endpoint for Prometheus scraping
+
+# Support loading config from multiple files with later overriding earlier

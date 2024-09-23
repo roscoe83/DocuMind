@@ -58,3 +58,5 @@
 # Support both relative and absolute paths for the config file
 
 # Add integration tests for the new export endpoint
+
+# Simplify the validation flow by reusing the same schema

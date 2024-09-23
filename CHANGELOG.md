@@ -102,3 +102,6 @@
 
 ## 2024-09-23
 - Implement a small in-memory cache for the config to avoid re-reading
+
+## 2024-09-23
+- Fix issue where empty input was not validated before passing to the parser
