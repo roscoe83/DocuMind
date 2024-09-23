@@ -44,3 +44,5 @@
 # Refactor exports so the public API is clearer and easier to use
 
 # Correct the timestamp format to use ISO 8601 for consistency
+
+# Handle timeout gracefully and return a clear error to the caller

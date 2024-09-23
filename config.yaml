@@ -66,3 +66,5 @@
 # Adjust the batch size to reduce memory usage on large inputs
 
 # Add integration tests for the new export endpoint
+
+# Add validation for the config schema before applying settings
