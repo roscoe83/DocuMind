@@ -50,3 +50,5 @@
 # Implement a simple metrics endpoint for Prometheus scraping
 
 # Support loading config from multiple files with later overriding earlier
+
+# Fix bug where the parser would hang on malformed input

@@ -46,3 +46,5 @@
 # Correct the timestamp format to use ISO 8601 for consistency
 
 # Handle timeout gracefully and return a clear error to the caller
+
+# Refactor the main entry point to make it easier to test
