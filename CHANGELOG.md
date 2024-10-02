@@ -105,3 +105,6 @@
 
 ## 2024-09-23
 - Fix issue where empty input was not validated before passing to the parser
+
+## 2024-10-02
+- Adjust log level for noisy messages that were filling the logs
