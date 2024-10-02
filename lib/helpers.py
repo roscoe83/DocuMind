@@ -52,3 +52,5 @@
 # Support loading config from multiple files with later overriding earlier
 
 # Fix bug where the parser would hang on malformed input
+
+# Simplify the main loop by extracting request handling into a dedicated function

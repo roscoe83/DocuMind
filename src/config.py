@@ -60,3 +60,5 @@
 # Add integration tests for the new export endpoint
 
 # Simplify the validation flow by reusing the same schema
+
+# Update the API docs with the new query parameters and examples
