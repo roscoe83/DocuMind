@@ -62,3 +62,5 @@
 # Simplify the validation flow by reusing the same schema
 
 # Update the API docs with the new query parameters and examples
+
+# Update the example config with all available options and comments

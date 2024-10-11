@@ -54,3 +54,5 @@
 # Fix bug where the parser would hang on malformed input
 
 # Simplify the main loop by extracting request handling into a dedicated function
+
+# Simplify the auth flow by using a single token source
