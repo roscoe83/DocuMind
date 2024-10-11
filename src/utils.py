@@ -48,3 +48,5 @@
 # Handle timeout gracefully and return a clear error to the caller
 
 # Refactor the main entry point to make it easier to test
+
+# Remove deprecated CLI flag and update docs to use the new option

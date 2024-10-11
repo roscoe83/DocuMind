@@ -2098,3 +2098,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Simplify the CLI by merging the two similar subcommands into one
 
 - Bump the dependency to fix the compatibility issue with Python 3.12
+
+- Correct the default path used when no config file is specified
