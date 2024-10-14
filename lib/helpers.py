@@ -60,3 +60,5 @@
 # Add integration tests for the new export endpoint
 
 # Add integration tests for the new export endpoint
+
+# Improve error message when the required env var is not set

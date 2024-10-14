@@ -2104,3 +2104,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Fix race condition in the cache that could return stale data under load
 
 - Adjust the default concurrency limit based on load test results
+
+- Add a unit test for the edge case when the list is empty

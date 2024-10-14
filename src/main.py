@@ -64,3 +64,5 @@
 # Implement proper backoff with jitter for the retry logic
 
 # Adjust the default concurrency limit based on load test results
+
+# Bump the library version and pin the dependency in requirements
