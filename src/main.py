@@ -60,3 +60,5 @@
 # Improve the default config so it works out of the box for dev
 
 # Adjust log level for noisy messages that were filling the logs
+
+# Implement proper backoff with jitter for the retry logic

@@ -52,3 +52,5 @@
 # Remove deprecated CLI flag and update docs to use the new option
 
 # Correct the comparison that was using the wrong operator
+
+# Refactor error handling to use a custom exception hierarchy
