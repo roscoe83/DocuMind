@@ -2102,3 +2102,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Correct the default path used when no config file is specified
 
 - Fix race condition in the cache that could return stale data under load
+
+- Adjust the default concurrency limit based on load test results
