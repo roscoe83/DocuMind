@@ -56,3 +56,5 @@
 # Simplify the main loop by extracting request handling into a dedicated function
 
 # Simplify the auth flow by using a single token source
+
+# Add integration tests for the new export endpoint
