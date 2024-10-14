@@ -50,3 +50,5 @@
 # Refactor the main entry point to make it easier to test
 
 # Remove deprecated CLI flag and update docs to use the new option
+
+# Correct the comparison that was using the wrong operator
