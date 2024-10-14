@@ -108,3 +108,6 @@
 
 ## 2024-10-02
 - Adjust log level for noisy messages that were filling the logs
+
+## 2024-10-14
+- Update the deployment docs with the new environment variables

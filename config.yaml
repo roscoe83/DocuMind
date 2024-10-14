@@ -72,3 +72,5 @@
 # Correct the formula used for calculating the backoff delay
 
 # Correct the formula used for calculating the backoff delay
+
+# Correct the comparison that was using the wrong operator
