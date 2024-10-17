@@ -2106,3 +2106,5 @@ Licensed under the **[Creative Commons Attribution-NonCommercial License](LICENS
 - Adjust the default concurrency limit based on load test results
 
 - Add a unit test for the edge case when the list is empty
+
+- Simplify the auth flow by using a single token source
