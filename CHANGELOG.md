@@ -111,3 +111,6 @@
 
 ## 2024-10-14
 - Update the deployment docs with the new environment variables
+
+## 2024-10-17
+- Improve performance by caching the result of the expensive lookup
