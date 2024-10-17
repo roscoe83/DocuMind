@@ -68,3 +68,5 @@
 # Bump the library version and pin the dependency in requirements
 
 # Implement a small in-memory cache for the config to avoid re-reading
+
+# Refactor exports so the public API is clearer and easier to use
