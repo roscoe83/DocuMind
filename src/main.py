@@ -66,3 +66,5 @@
 # Adjust the default concurrency limit based on load test results
 
 # Bump the library version and pin the dependency in requirements
+
+# Implement a small in-memory cache for the config to avoid re-reading
