@@ -117,3 +117,6 @@
 
 ## 2024-10-17
 - Add a small delay between retries to avoid thundering herd
+
+## 2024-10-17
+- Improve logging so we can trace requests through the pipeline in production
