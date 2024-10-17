@@ -114,3 +114,6 @@
 
 ## 2024-10-17
 - Improve performance by caching the result of the expensive lookup
+
+## 2024-10-17
+- Add a small delay between retries to avoid thundering herd
