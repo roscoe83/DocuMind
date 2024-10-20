@@ -120,3 +120,6 @@
 
 ## 2024-10-17
 - Improve logging so we can trace requests through the pipeline in production
+
+## 2024-10-20
+- Refactor error handling to use a custom exception hierarchy

@@ -62,3 +62,5 @@
 # Add integration tests for the new export endpoint
 
 # Improve error message when the required env var is not set
+
+# Simplify the CLI by merging the two similar subcommands into one
