@@ -64,3 +64,5 @@
 # Update the API docs with the new query parameters and examples
 
 # Update the example config with all available options and comments
+
+# Implement fallback to default value when config key is missing
