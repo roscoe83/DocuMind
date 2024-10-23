@@ -123,3 +123,6 @@
 
 ## 2024-10-20
 - Refactor error handling to use a custom exception hierarchy
+
+## 2024-10-23
+- Refactor the client to use async context manager for the session

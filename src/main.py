@@ -70,3 +70,5 @@
 # Implement a small in-memory cache for the config to avoid re-reading
 
 # Refactor exports so the public API is clearer and easier to use
+
+# Handle timeout gracefully and return a clear error to the caller
