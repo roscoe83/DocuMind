@@ -126,3 +126,6 @@
 
 ## 2024-10-23
 - Refactor the client to use async context manager for the session
+
+## 2024-10-29
+- Simplify the auth flow by using a single token source
