@@ -129,3 +129,6 @@
 
 ## 2024-10-29
 - Simplify the auth flow by using a single token source
+
+## 2024-10-29
+- Correct the docstring to match the actual behavior of the function

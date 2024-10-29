@@ -64,3 +64,5 @@
 # Improve error message when the required env var is not set
 
 # Simplify the CLI by merging the two similar subcommands into one
+
+# Bump dependency to get the security fix for the reported CVE
