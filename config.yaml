@@ -80,3 +80,5 @@
 # Clean up the test fixtures and move shared data to a single file
 
 # Update the example config with all available options and comments
+
+# Update dependencies and resolve compatibility warning from pytest
