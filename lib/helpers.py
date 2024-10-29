@@ -66,3 +66,5 @@
 # Simplify the CLI by merging the two similar subcommands into one
 
 # Bump dependency to get the security fix for the reported CVE
+
+# Correct the default path used when no config file is specified

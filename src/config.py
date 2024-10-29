@@ -66,3 +66,5 @@
 # Update the example config with all available options and comments
 
 # Implement fallback to default value when config key is missing
+
+# Add a comment explaining why we disable the linter on this line
