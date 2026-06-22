@@ -1,0 +1,524 @@
+import React, { useEffect, useState } from "react";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Button,
+  IconButton,
+  Drawer,
+  Box,
+  List,
+  ListItem,
+  ListItemText,
+  ListItemIcon,
+  Menu,
+  MenuItem,
+  Divider,
+  useMediaQuery,
+} from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
+import { NavLink, useNavigate } from "react-router-dom";
+import MenuIcon from "@mui/icons-material/Menu";
+import Brightness4Icon from "@mui/icons-material/Brightness4";
+import Brightness7Icon from "@mui/icons-material/Brightness7";
+import HomeIcon from "@mui/icons-material/Home";
+import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
+import DescriptionIcon from "@mui/icons-material/Description";
+import PersonIcon from "@mui/icons-material/Person";
+import ExitToAppIcon from "@mui/icons-material/ExitToApp";
+import LoginIcon from "@mui/icons-material/Login";
+import AppRegistrationIcon from "@mui/icons-material/AppRegistration";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import VpnKeyIcon from "@mui/icons-material/VpnKey";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import { isAuthenticated, clearAuth, onAuthChange } from "../utils/auth";
+
+const Navbar = ({ theme, onThemeToggle }) => {
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [accountAnchor, setAccountAnchor] = useState(null);
+  const navigate = useNavigate();
+  const isLargeScreen = useMediaQuery("(min-width:1111px)");
+  const accountMenuOpen = Boolean(accountAnchor);
+
+  // Shared nav-link styling: soft orange pill on hover (no enlarge), orange
+  // highlight when active.
+  const navButtonSx = {
+    color: theme === "dark" ? "#e8e8e8" : "#333",
+    mx: 0.5,
+    px: 1.5,
+    py: 0.8,
+    borderRadius: "10px",
+    font: "inherit",
+    fontWeight: 500,
+    textTransform: "none",
+    display: "flex",
+    alignItems: "center",
+    transition: "background-color 0.2s ease, color 0.2s ease",
+    "&:hover": {
+      bgcolor:
+        theme === "dark" ? "rgba(245,124,0,0.16)" : "rgba(245,124,0,0.1)",
+      color: "#f57c00",
+    },
+  };
+  const navActiveStyle = {
+    backgroundColor:
+      theme === "dark" ? "rgba(245,124,0,0.22)" : "rgba(245,124,0,0.14)",
+    color: "#f57c00",
+    borderRadius: "10px",
+  };
+
+  useEffect(() => {
+    const sync = () => setIsLoggedIn(isAuthenticated());
+    sync();
+    return onAuthChange(sync);
+  }, []);
+
+  const toggleDrawer = (open) => (event) => {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
+    setDrawerOpen(open);
+  };
+
+  const handleAccountOpen = (event) => setAccountAnchor(event.currentTarget);
+  const handleAccountClose = () => setAccountAnchor(null);
+
+  const handlePasskeys = () => {
+    handleAccountClose();
+    navigate("/passkeys");
+  };
+
+  const handleLogout = () => {
+    handleAccountClose();
+    clearAuth();
+    navigate("/login");
+  };
+
+  const renderNavLinks = (
+    <>
+      <Button
+        component={NavLink}
+        to="/home"
+        style={({ isActive }) => (isActive ? navActiveStyle : undefined)}
+        sx={navButtonSx}
+      >
+        <HomeIcon sx={{ marginRight: 1 }} /> Home
+      </Button>
+      <Button
+        component={NavLink}
+        to="/how-to-use"
+        style={({ isActive }) => (isActive ? navActiveStyle : undefined)}
+        sx={navButtonSx}
+      >
+        <HelpOutlineIcon sx={{ marginRight: 1 }} /> How to Use
+      </Button>
+      <Button
+        component={NavLink}
+        to="/documents"
+        style={({ isActive }) => (isActive ? navActiveStyle : undefined)}
+        sx={navButtonSx}
+      >
+        <DescriptionIcon sx={{ marginRight: 1 }} /> Documents
+      </Button>
+      <Button
+        component={NavLink}
+        to="/profile"
+        style={({ isActive }) => (isActive ? navActiveStyle : undefined)}
+        sx={navButtonSx}
+      >
+        <PersonIcon sx={{ marginRight: 1 }} /> Profile
+      </Button>
+
+      {isLoggedIn ? (
+        <>
+          <Button
+            onClick={handleAccountOpen}
+            aria-haspopup="true"
+            aria-expanded={accountMenuOpen ? "true" : undefined}
+            endIcon={
+              <KeyboardArrowDownIcon
+                sx={{
+                  transition: "transform 0.2s ease",
+                  transform: accountMenuOpen ? "rotate(180deg)" : "none",
+                }}
+              />
+            }
+            sx={navButtonSx}
+          >
+            <AccountCircleIcon sx={{ marginRight: 1 }} /> Account
+          </Button>
+          <Menu
+            anchorEl={accountAnchor}
+            open={accountMenuOpen}
+            onClose={handleAccountClose}
+            anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+            transformOrigin={{ vertical: "top", horizontal: "right" }}
+            PaperProps={{
+              sx: {
+                mt: 1,
+                minWidth: 180,
+                borderRadius: "12px",
+                bgcolor: theme === "dark" ? "#2a2a2a" : "white",
+                color: theme === "dark" ? "white" : "black",
+                boxShadow: "0 8px 24px rgba(0,0,0,0.18)",
+                fontFamily: "Poppins, sans-serif",
+              },
+            }}
+          >
+            <MenuItem
+              onClick={handlePasskeys}
+              sx={{
+                font: "inherit",
+                py: 1.2,
+                "&:hover": {
+                  bgcolor: theme === "dark" ? "#3a3a3a" : "#f5f5f5",
+                },
+              }}
+            >
+              <VpnKeyIcon sx={{ marginRight: 1.5, color: "#f57c00" }} />{" "}
+              Passkeys
+            </MenuItem>
+            <Divider
+              sx={{ borderColor: theme === "dark" ? "#3a3a3a" : "#eee" }}
+            />
+            <MenuItem
+              onClick={handleLogout}
+              sx={{
+                font: "inherit",
+                py: 1.2,
+                color: "red",
+                "&:hover": {
+                  bgcolor: theme === "dark" ? "#3a3a3a" : "#fdeded",
+                  color: "red",
+                },
+              }}
+            >
+              <ExitToAppIcon sx={{ marginRight: 1.5, color: "red" }} /> Log Out
+            </MenuItem>
+          </Menu>
+        </>
+      ) : (
+        <Button
+          component={NavLink}
+          to="/login"
+          style={({ isActive }) => (isActive ? navActiveStyle : undefined)}
+          sx={navButtonSx}
+        >
+          <LoginIcon sx={{ marginRight: 1 }} /> Login
+        </Button>
+      )}
+
+      {!isLoggedIn && (
+        <Button
+          component={NavLink}
+          to="/register"
+          style={({ isActive }) => (isActive ? navActiveStyle : undefined)}
+          sx={navButtonSx}
+        >
+          <AppRegistrationIcon sx={{ marginRight: 1 }} /> Register
+        </Button>
+      )}
+    </>
+  );
+
+  return (
+    <AppBar
+      position="static"
+      elevation={0}
+      sx={{
+        bgcolor: theme === "dark" ? "#1f1f1f" : "white",
+        zIndex: 1000,
+        padding: 1,
+        borderBottom: theme === "dark" ? "1px solid #333" : "1px solid #eee",
+        transition: "background-color 0.3s ease, color 0.3s ease",
+      }}
+    >
+      <Toolbar>
+        <Typography
+          variant="h1"
+          component={NavLink}
+          to="/"
+          sx={{
+            flexGrow: 1,
+            color: "#f57c00",
+            font: "inherit",
+            fontWeight: "bold",
+            fontSize: "2rem",
+            textDecoration: "none",
+          }}
+        >
+          DocuThinker
+        </Typography>
+
+        <Box sx={{ display: isLargeScreen ? "flex" : "none" }}>
+          {renderNavLinks}
+        </Box>
+
+        <IconButton
+          onClick={onThemeToggle}
+          sx={{
+            marginLeft: 2,
+            color: theme === "dark" ? "#e8e8e8" : "#333",
+            transition: "background-color 0.2s ease, color 0.2s ease",
+            "&:hover": {
+              color: "#f57c00",
+              bgcolor:
+                theme === "dark"
+                  ? "rgba(245,124,0,0.16)"
+                  : "rgba(245,124,0,0.1)",
+            },
+          }}
+        >
+          {theme === "dark" ? <Brightness7Icon /> : <Brightness4Icon />}
+        </IconButton>
+
+        <IconButton
+          edge="start"
+          color="inherit"
+          aria-label="menu"
+          sx={{ display: isLargeScreen ? "none" : "flex", marginLeft: "4px" }}
+          onClick={toggleDrawer(true)}
+        >
+          <MenuIcon sx={{ color: theme === "dark" ? "white" : "black" }} />
+        </IconButton>
+      </Toolbar>
+
+      <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
+        <Box
+          sx={{
+            width: 250,
+            padding: 2,
+            height: "100%",
+            bgcolor: theme === "dark" ? "#333" : "white",
+          }}
+          role="presentation"
+          onClick={toggleDrawer(false)}
+          onKeyDown={toggleDrawer(false)}
+        >
+          <List sx={{ bgcolor: theme === "dark" ? "#333" : "white" }}>
+            <ListItem
+              button
+              component={NavLink}
+              to="/home"
+              sx={{
+                color: theme === "dark" ? "white" : "black",
+                "&:hover": {
+                  color: theme === "dark" ? "white" : "black",
+                  bgcolor: theme === "dark" ? "#444" : "#f5f5f5",
+                },
+                borderRadius: "8px",
+              }}
+            >
+              <ListItemIcon
+                sx={{
+                  minWidth: "40px",
+                  color: theme === "dark" ? "white" : "black",
+                }}
+              >
+                <HomeIcon />
+              </ListItemIcon>
+              <ListItemText disableTypography primary="Home" />
+            </ListItem>
+
+            <ListItem
+              button
+              component={NavLink}
+              to="/how-to-use"
+              sx={{
+                color: theme === "dark" ? "white" : "black",
+                "&:hover": {
+                  color: theme === "dark" ? "white" : "black",
+                  bgcolor: theme === "dark" ? "#444" : "#f5f5f5",
+                },
+                borderRadius: "8px",
+              }}
+            >
+              <ListItemIcon
+                sx={{
+                  minWidth: "40px",
+                  color: theme === "dark" ? "white" : "black",
+                }}
+              >
+                <HelpOutlineIcon />
+              </ListItemIcon>
+              <ListItemText disableTypography primary="How to Use" />
+            </ListItem>
+
+            <ListItem
+              button
+              component={NavLink}
+              to="/documents"
+              sx={{
+                color: theme === "dark" ? "white" : "black",
+                "&:hover": {
+                  color: theme === "dark" ? "white" : "black",
+                  bgcolor: theme === "dark" ? "#444" : "#f5f5f5",
+                },
+                borderRadius: "8px",
+              }}
+            >
+              <ListItemIcon
+                sx={{
+                  minWidth: "40px",
+                  color: theme === "dark" ? "white" : "black",
+                }}
+              >
+                <DescriptionIcon />
+              </ListItemIcon>
+              <ListItemText disableTypography primary="Documents" />
+            </ListItem>
+
+            <ListItem
+              button
+              component={NavLink}
+              to="/profile"
+              sx={{
+                color: theme === "dark" ? "white" : "black",
+                "&:hover": {
+                  color: theme === "dark" ? "white" : "black",
+                  bgcolor: theme === "dark" ? "#444" : "#f5f5f5",
+                },
+                borderRadius: "8px",
+              }}
+            >
+              <ListItemIcon
+                sx={{
+                  minWidth: "40px",
+                  color: theme === "dark" ? "white" : "black",
+                }}
+              >
+                <PersonIcon />
+              </ListItemIcon>
+              <ListItemText disableTypography primary="Profile" />
+            </ListItem>
+            {isLoggedIn ? (
+              <>
+                <ListItem
+                  button
+                  component={NavLink}
+                  to="/passkeys"
+                  sx={{
+                    color: theme === "dark" ? "white" : "black",
+                    "&:hover": {
+                      color: theme === "dark" ? "white" : "black",
+                      bgcolor: theme === "dark" ? "#444" : "#f5f5f5",
+                    },
+                    borderRadius: "8px",
+                  }}
+                >
+                  <ListItemIcon
+                    sx={{
+                      minWidth: "40px",
+                      color: theme === "dark" ? "white" : "black",
+                    }}
+                  >
+                    <VpnKeyIcon />
+                  </ListItemIcon>
+                  <ListItemText disableTypography primary="Passkeys" />
+                </ListItem>
+                <ListItem
+                  button
+                  onClick={handleLogout}
+                  sx={{
+                    color: "red",
+                    "&:hover": {
+                      color: "red",
+                      bgcolor: theme === "dark" ? "#444" : "#f5f5f5",
+                    },
+                    borderRadius: "8px",
+                    cursor: "pointer",
+                  }}
+                >
+                  <ListItemIcon sx={{ minWidth: "40px", color: "red" }}>
+                    <ExitToAppIcon />
+                  </ListItemIcon>
+                  <ListItemText disableTypography primary="Log Out" />
+                </ListItem>
+              </>
+            ) : (
+              <ListItem
+                button
+                component={NavLink}
+                to="/login"
+                sx={{
+                  color: theme === "dark" ? "white" : "black",
+                  "&:hover": {
+                    color: theme === "dark" ? "white" : "black",
+                    bgcolor: theme === "dark" ? "#444" : "#f5f5f5",
+                  },
+                  borderRadius: "8px",
+                }}
+              >
+                <ListItemIcon
+                  sx={{
+                    minWidth: "40px",
+                    color: theme === "dark" ? "white" : "black",
+                  }}
+                >
+                  <LoginIcon />
+                </ListItemIcon>
+                <ListItemText disableTypography primary="Login" />
+              </ListItem>
+            )}
+
+            {!isLoggedIn && (
+              <ListItem
+                button
+                component={NavLink}
+                to="/register"
+                sx={{
+                  color: theme === "dark" ? "white" : "black",
+                  "&:hover": {
+                    color: theme === "dark" ? "white" : "black",
+                    bgcolor: theme === "dark" ? "#444" : "#f5f5f5",
+                  },
+                  borderRadius: "8px",
+                }}
+              >
+                <ListItemIcon
+                  sx={{
+                    minWidth: "40px",
+                    color: theme === "dark" ? "white" : "black",
+                  }}
+                >
+                  <AppRegistrationIcon />
+                </ListItemIcon>
+                <ListItemText disableTypography primary="Register" />
+              </ListItem>
+            )}
+
+            <ListItem
+              button
+              onClick={toggleDrawer(false)}
+              sx={{
+                color: theme === "dark" ? "white" : "black",
+                "&:hover": {
+                  color: theme === "dark" ? "white" : "black",
+                  bgcolor: theme === "dark" ? "#444" : "#f5f5f5",
+                },
+                borderRadius: "8px",
+                cursor: "pointer",
+              }}
+            >
+              <ListItemIcon
+                sx={{
+                  minWidth: "40px",
+                  color: theme === "dark" ? "white" : "black",
+                }}
+              >
+                <CloseIcon />
+              </ListItemIcon>
+              <ListItemText disableTypography primary="Close" />
+            </ListItem>
+          </List>
+        </Box>
+      </Drawer>
+    </AppBar>
+  );
+};
+
+export default Navbar;
